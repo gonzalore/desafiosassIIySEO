@@ -1,0 +1,74 @@
+//trabajo en el HTML de servicios
+//Grid para la página servicios
+
+.mainServicio{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainS mainS"
+                         "imagen1 imagen2"
+                         "imagen3 imagen4";
+    justify-content: center;
+    margin: auto;
+}
+
+.sectionNosotros{
+    display:none
+
+}
+
+.mainS{
+    text-align: center;
+    grid-area: mainS;
+    margin: auto;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    margin: 0.3rem;
+}
+
+.imagen2{
+    grid-area: imagen2;
+    margin: 0.3rem;
+}
+
+.imagen3{
+    grid-area: imagen3;
+    margin: 0.3rem;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    margin: 0.3rem;
+}
+
+
+@media only screen and (min-width:600px){
+
+    .mainServicio{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainS mainS img img"
+                             "imagen1 imagen2 imagen3 imagen4";                   
+        justify-content: center;
+        margin: auto;
+    }
+
+
+    .sectionNosotros{
+        display: block;
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    .mainS{
+
+        font-size: 1.5rem;
+        margin: auto;
+            
+    }
+}
